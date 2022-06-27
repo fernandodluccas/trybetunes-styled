@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ClipLoader from 'react-spinners/ClipLoader';
+import Loading from '../../components/Loading';
 
 import { getUser, updateUser } from '../../services/userAPI';
 import Header from '../../components/Header';
@@ -61,7 +61,7 @@ export default class ProfileEdit extends React.Component {
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
           {loading ? (
-            <ClipLoader color="#e33b6d" />
+            <Loading />
           ) : (
             <form>
               <ImageContainer>

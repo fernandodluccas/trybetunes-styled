@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import ClipLoader from 'react-spinners/ClipLoader';
+import Loading from '../../components/Loading';
 
 import searchAlbumsAPI from '../../services/searchAlbumsAPI';
 import Header from '../../components/Header';
@@ -89,7 +89,7 @@ export default class Search extends React.Component {
         </Form>
 
         {loading ? (
-          <ClipLoader color="#e33b6d" />
+          <Loading />
         ) : (
           <AlbumList>
             {artistAlbum.length > 0 && (

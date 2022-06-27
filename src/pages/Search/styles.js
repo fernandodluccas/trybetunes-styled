@@ -54,8 +54,9 @@ export const AlbumList = styled.div`
   width: 100%;
   max-width: 890px;
   margin: auto;
+  color: ${({ theme }) => theme.colors.heading};
+
   h2 {
-    color: ${({ theme }) => theme.colors.heading};
     margin-bottom: 1rem;
   }
 `;

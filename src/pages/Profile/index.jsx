@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ClipLoader from 'react-spinners/ClipLoader';
+import Loading from '../../components/Loading';
 
 import { getUser } from '../../services/userAPI';
 import Header from '../../components/Header';
@@ -25,7 +25,7 @@ export default class Profile extends React.Component {
       <div data-testid="page-profile">
         <Header />
         {loading ? (
-          <ClipLoader color="#e33b6d" />
+          <Loading />
         ) : (
           <Container>
             <span>
